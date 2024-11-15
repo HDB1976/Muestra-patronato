@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Barbería 1969</title>
+    <style>
+        .resolucion {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+        @media (min-width: 991px) {
+            .deskshop {
+                display: block;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9e9e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #000;
+            color: #fff;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 117px;
+            height: 111px;
+            margin-right: 0%;
+            border-radius: 60%;
+        }
+
+        .title {
+            font-size: 64px;
+            font-family: "Akronim", serif;
+            font-weight: 400;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .description {
+            background-color: #1e3d40;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-family: "Bona Nova", sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .footer {
+            font-size: 14px;
+            margin-top: 20px;
+            background-color: #1e3d40;
+            text-align: center;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #00aaff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resolucion">
+        <div class="deskshop"></div>
+        <div class="tablet"></div>
+        <div class="movil"></div>
+    </div>
+
+    <div class="container">
+        <!-- Logo y Título -->
+        <img src="Carpeta de imagenes/logo.jpg" alt="Logo de La Barbería" class="logo">
+        <h1 class="title">La Barbería 1969</h1>
+
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <p>Turnos: 01146223458</p>
+        </div>
+
+        <!-- Descripción -->
+        <div class="description">
+            <p>
+                La Barberia 1969 nace el año que indica su nombre, hace un año y medio que se encuentra en el local de la
+                Calle Presidente Juan Domingo Perón 479, Villa Luzuriaga, La Matanza. Es atendida por su dueño Claudio,
+                quien hará magia tanto con las tijeras como con sus máquinas y navajas. Tu cabello y tu barba quedarán impecables.
+            </p>
+            <p>
+                Cris te recibe siempre con una sonrisa y un abrazo. Tendrán amigables charlas, compartirán mates y cafés.
+                Ir a la Barberia es una experiencia única. ¡Tiene un estilo vintage que no podrás creer! ¿Qué esperas para conocer La Barbería 1969?
+            </p>
+            <p>¡Te esperamos!</p>
+        </div>
+
+        <!-- Galería de Imágenes -->
+        <div class="gallery">
+            <img src="Carpeta de imagenes/foto1.jpg" alt="Foto 1">
+            <img src="Carpeta de imagenes/foto2.jpg" alt="Foto 2">
+            <img src="Carpeta de imagenes/foto3.jpg" alt="Foto 3">
+            <img src="Carpeta de imagenes/foto4.jpg" alt="Foto 4">
+            <img src="Carpeta de imagenes/foto5.jpg" alt="Foto 5">
+            <img src="Carpeta de imagenes/foto6.jpg" alt="Foto 6">
+        </div>
+
+        <!-- Pie de página -->
+        <div class="footer">
+            <p>Todos los derechos reservados KyC Programación</p>
+            <p>
+                Nuestras redes:
+                <a href="https://www.instagram.com/labarberia1969" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/search/top?q=la%20barberia%20196" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
